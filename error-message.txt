@@ -1,0 +1,129 @@
+ cargo espflash flash
+[2023-10-07T16:54:47Z INFO ] Detected 10 serial ports
+[2023-10-07T16:54:47Z INFO ] Ports which match a known common dev board are highlighted
+[2023-10-07T16:54:47Z INFO ] Please select a port
+[2023-10-07T16:54:49Z INFO ] Serial port: '/dev/cu.usbserial-01665DE5'
+[2023-10-07T16:54:49Z INFO ] Connecting...
+[2023-10-07T16:54:49Z INFO ] Using flash stub
+   Compiling esp-idf-sys v0.33.2
+error: failed to run custom build command for `esp-idf-sys v0.33.2`
+
+Caused by:
+  process didn't exit successfully: `/Volumes/DevLocal/DevRust/Learn/esp32-v1/target/debug/build/esp-idf-sys-9277c8326bc10955/build-script-build` (exit status: 101)
+  --- stdout
+  cargo:rerun-if-env-changed=ESP_IDF_TOOLS_INSTALL_DIR
+  cargo:rerun-if-env-changed=ESP_IDF_SDKCONFIG
+  cargo:rerun-if-env-changed=ESP_IDF_SDKCONFIG_DEFAULTS
+  cargo:rerun-if-env-changed=MCU
+  cargo:rerun-if-env-changed=ESP_IDF_SYS_ROOT_CRATE
+  cargo:rerun-if-env-changed=ESP_IDF_VERSION
+  cargo:rerun-if-env-changed=ESP_IDF_REPOSITORY
+  cargo:rerun-if-env-changed=ESP_IDF_CMAKE_GENERATOR
+  cargo:rerun-if-env-changed=IDF_PATH
+  cargo:rerun-if-env-changed=EXTRA-COMPONENTS
+  cargo:rerun-if-env-changed=ESP_IDF_COMPONENTS
+  IDF_PYTHON_ENV_PATH=/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/python_env/idf4.4_py3.11_env
+  PATH=/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/cmake/3.23.1/CMake.app/Contents/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/ninja/1.10.2/:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/python_env/idf4.4_py3.11_env/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/tools:$PATH
+  Current system platform: macos-arm64
+  Skipping xtensa-esp32-elf@esp-2021r2-patch5-8.4.0 (already installed)
+  Skipping cmake@3.23.1 (already installed)
+  Skipping ninja@1.10.2 (already installed)
+  Skipping esp32ulp-elf@2.35_20220830 (already installed)
+  IDF_PYTHON_ENV_PATH=/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/python_env/idf4.4_py3.11_env
+  PATH=/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/cmake/3.23.1/CMake.app/Contents/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/ninja/1.10.2/:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/python_env/idf4.4_py3.11_env/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/tools:$PATH
+  cargo:rerun-if-changed=/Volumes/DevLocal/DevRust/Learn/esp32-v1/sdkconfig.defaults
+  CMAKE_PREFIX_PATH_xtensa-esp32-espidf = None
+  CMAKE_PREFIX_PATH_xtensa_esp32_espidf = None
+  TARGET_CMAKE_PREFIX_PATH = None
+  CMAKE_PREFIX_PATH = None
+  CMAKE_xtensa-esp32-espidf = None
+  CMAKE_xtensa_esp32_espidf = None
+  TARGET_CMAKE = None
+  CMAKE = None
+  running: cd "/Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/build" && CMAKE_PREFIX_PATH="" EXTRA_COMPONENT_DIRS="" IDF_PATH="/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5" IDF_TARGET="esp32" IDF_TOOLS_PATH="/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif" PATH="/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/python_env/idf4.4_py3.11_env/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/cmake/3.23.1/CMake.app/Contents/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/ninja/1.10.2/:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/tools:/Users/mikemitterer/.local/bin:/usr/local/sbin:/opt/homebrew/opt/openjdk@17/bin:/Volumes/DevLocal/DevPython/Production/Utils/src/main/bash:/Volumes/DevLocal/DevPython/Production/Utils/src/main/python:/Volumes/DevLocal/DevBash/Production/BashTools/src:/Users/mikemitterer/bin:/Applications/Sublime Text.app/Contents/SharedSupport/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/mikemitterer/.cargo/bin:/Users/mikemitterer/Library/Application Support/JetBrains/Toolbox/scripts:/Users/mikemitterer/Library/Android/sdk/platform-tools:/Users/mikemitterer/Library/Android/sdk/emulator:/Users/mikemitterer/Library/Android/sdk/tools/bin:./node_modules/.bin:/Users/mikemitterer/.yarn/bin:/Users/mikemitterer/.config/yarn/global/node_modules/.bin:/Users/mikemitterer/bin/fmpp_0.9.15/bin::/Users/mikemitterer/.cargo/bin:/Users/mikemitterer/Library/Python/3.11/bin" SDKCONFIG_DEFAULTS="/Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/gen-sdkconfig.defaults;/Volumes/DevLocal/DevRust/Learn/esp32-v1/sdkconfig.defaults" "cmake" "/Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out" "-G" "Ninja" "-DCMAKE_TOOLCHAIN_FILE=/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/tools/cmake/toolchain-esp32.cmake" "-DCMAKE_BUILD_TYPE=" "-DPYTHON=/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/python_env/idf4.4_py3.11_env/bin/python" "-DCMAKE_INSTALL_PREFIX=/Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out" "-DCMAKE_C_FLAGS= -mlongcalls -Wno-frame-address -ffunction-sections -fdata-sections" "-DCMAKE_CXX_FLAGS= -mlongcalls -Wno-frame-address -ffunction-sections -fdata-sections" "-DCMAKE_ASM_FLAGS= -mlongcalls -ffunction-sections -fdata-sections"
+  -- Checking Python dependencies...
+  Python requirements from /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/requirements.txt are satisfied.
+  -- Project sdkconfig file /Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/sdkconfig
+  Loading defaults file /Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/gen-sdkconfig.defaults...
+  Loading defaults file /Volumes/DevLocal/DevRust/Learn/esp32-v1/sdkconfig.defaults...
+  -- App "libespidf" version: 1
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/build/esp-idf/esp_system/ld/memory.ld
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_system/ld/esp32/sections.ld.in
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_rom/esp32/ld/esp32.rom.ld
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_rom/esp32/ld/esp32.rom.api.ld
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_rom/esp32/ld/esp32.rom.newlib-time.ld
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/soc/esp32/ld/esp32.peripherals.ld
+  -- Configuring done
+  -- Generating done
+  -- Build files have been written to: /Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/build
+  running: cd "/Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/build" && EXTRA_COMPONENT_DIRS="" IDF_PATH="/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5" IDF_TARGET="esp32" IDF_TOOLS_PATH="/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif" PATH="/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/python_env/idf4.4_py3.11_env/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/cmake/3.23.1/CMake.app/Contents/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/tools/ninja/1.10.2/:/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/tools:/Users/mikemitterer/.local/bin:/usr/local/sbin:/opt/homebrew/opt/openjdk@17/bin:/Volumes/DevLocal/DevPython/Production/Utils/src/main/bash:/Volumes/DevLocal/DevPython/Production/Utils/src/main/python:/Volumes/DevLocal/DevBash/Production/BashTools/src:/Users/mikemitterer/bin:/Applications/Sublime Text.app/Contents/SharedSupport/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/mikemitterer/.cargo/bin:/Users/mikemitterer/Library/Application Support/JetBrains/Toolbox/scripts:/Users/mikemitterer/Library/Android/sdk/platform-tools:/Users/mikemitterer/Library/Android/sdk/emulator:/Users/mikemitterer/Library/Android/sdk/tools/bin:./node_modules/.bin:/Users/mikemitterer/.yarn/bin:/Users/mikemitterer/.config/yarn/global/node_modules/.bin:/Users/mikemitterer/bin/fmpp_0.9.15/bin::/Users/mikemitterer/.cargo/bin:/Users/mikemitterer/Library/Python/3.11/bin" SDKCONFIG_DEFAULTS="/Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/gen-sdkconfig.defaults;/Volumes/DevLocal/DevRust/Learn/esp32-v1/sdkconfig.defaults" "cmake" "--build" "." "--config" "MinSizeRel" "--parallel" "10"
+  [1/7] Generating ld/sections.ld
+  [2/7] Performing build step for 'bootloader'
+  [0/1] Re-running CMake...
+  -- Building ESP-IDF components for target esp32
+  -- Project sdkconfig file /Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/sdkconfig
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/soc/esp32/ld/esp32.peripherals.ld
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_rom/esp32/ld/esp32.rom.ld
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_rom/esp32/ld/esp32.rom.api.ld
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+  -- Adding linker script /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+  -- Components: bootloader bootloader_support efuse esp32 esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+  -- Component paths: /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/bootloader /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/bootloader_support /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/efuse /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp32 /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_common /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_hw_support /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_rom /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esp_system /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/esptool_py /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/freertos /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/hal /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/log /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/bootloader/subproject/main /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/bootloader/subproject/components/micro-ecc /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/newlib /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/partition_table /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/soc /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/spi_flash /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/xtensa
+  -- Configuring done
+  -- Generating done
+  -- Build files have been written to: /Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/build/bootloader
+  [1/1] cd /Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/build/bootloader/esp-idf/esptool_py && /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/python_env/idf4.4_py3.11_env/bin/python /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/build/bootloader/bootloader.bin
+  Bootloader binary size 0x63f0 bytes. 0xc10 bytes (11%) free.
+  [3/5] Linking C executable libespidf.elf
+  [4/5] Generating binary image from built executable
+  esptool.py v3.3.4-dev
+  Creating esp32 image...
+  Merged 2 ELF sections
+  Successfully created esp32 image.
+  Generated /Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/build/libespidf.bin
+  [5/5] cd /Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/build/esp-idf/esptool_py && /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/python_env/idf4.4_py3.11_env/bin/python /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/build/partition_table/partition-table.bin /Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/build/libespidf.bin
+  libespidf.bin binary size 0x27ad0 bytes. Smallest app partition is 0x100000 bytes. 0xd8530 bytes (85%) free.
+  cargo:root=/Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out
+  cargo:rerun-if-changed=/Users/mikemitterer/.cargo/registry/src/index.crates.io-6f17d22bba15001f/esp-idf-sys-0.33.2/src/include/esp-idf/bindings.h
+  cargo:rustc-env=EMBUILD_GENERATED_BINDINGS_FILE=/Volumes/DevLocal/DevRust/Learn/esp32-v1/target/xtensa-esp32-espidf/debug/build/esp-idf-sys-59aeb32bb57662a3/out/bindings.rs
+
+  --- stderr
+  Build configuration: BuildConfig {
+      esp_idf_tools_install_dir: None,
+      esp_idf_sdkconfig: None,
+      esp_idf_sdkconfig_defaults: None,
+      mcu: None,
+      native: NativeConfig {
+          esp_idf_version: Some(
+              Tag(
+                  "v4.4.5",
+              ),
+          ),
+          esp_idf_repository: None,
+          esp_idf_cmake_generator: None,
+          idf_path: None,
+          extra_components: [],
+          esp_idf_components: None,
+      },
+      esp_idf_sys_root_crate: None,
+  }
+  Using managed esp-idf repository: RemoteSdk { repo_url: None, git_ref: Tag("v4.4.5") }
+  Using esp-idf v4.4.5 at '/Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5'
+  /Volumes/DevLocal/DevRust/Learn/esp32-v1/.embuild/espressif/esp-idf/v4.4.5/tools/check_python_dependencies.py:12: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    import pkg_resources
+  Built components: esp_ringbuf, efuse, esp_ipc, driver, esp_pm, mbedtls, bootloader, esptool_py, partition_table, app_update, bootloader_support, spi_flash, nvs_flash, pthread, esp_gdbstub, espcoredump, esp_phy, esp_system, esp_rom, hal, vfs, esp_eth, tcpip_adapter, esp_netif, esp_event, wpa_supplicant, esp_wifi, ieee802154, console, openthread, lwip, log, heap, soc, esp_hw_support, xtensa, esp32, esp_common, esp_timer, freertos, newlib, cxx, app_trace, asio, bt, cbor, unity, cmock, coap, nghttp, esp-tls, esp_adc_cal, esp_hid, tcp_transport, esp_http_client, esp_http_server, esp_https_ota, esp_https_server, esp_lcd, protobuf-c, protocomm, mdns, esp_local_ctrl, sdmmc, esp_serial_slave_link, esp_websocket_client, expat, wear_levelling, fatfs, freemodbus, idf_test, jsmn, json, libsodium, mqtt, openssl, perfmon, spiffs, usb, tinyusb, ulp, wifi_provisioning
+  error: unknown target triple 'xtensa', please use -triple or -arch
+  thread 'main' panicked at 'libclang error; possible causes include:
+  - Invalid flag syntax
+  - Unrecognized flags
+  - Invalid flag arguments
+  - File I/O errors
+  - Host vs. target architecture mismatch
+  If you encounter an error missing from this list, please file an issue or a PR!', /Users/mikemitterer/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bindgen-0.63.0/ir/context.rs:530:15
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
